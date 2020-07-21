@@ -1,0 +1,44 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <PreferenceCategory
+        app:iconSpaceReserved="@bool/is_tablet"
+        android:title="@string/title_category_account">
+
+        <Preference
+            android:key="account"
+            android:icon="@drawable/ic_person_black_24dp"
+            />
+
+        <Preference
+            app:fragment="com.megboyzz.mydnevnik.SettingsActivity$LogoutFragment"
+            app:icon="@drawable/ic_meeting_room_black_24dp"
+            app:key="logout_button"
+            app:singleLineTitle="true"
+            app:title="@string/Logout"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:iconSpaceReserved="@bool/is_tablet"
+        android:title="@string/title_notifications">
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="switch_preference_1"
+            android:title="@string/title_marks_notifications"
+            app:iconSpaceReserved="@bool/is_tablet"/>
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="switch_preference_2"
+            android:title="@string/title_homeworks_notifications"
+            app:iconSpaceReserved="@bool/is_tablet"/>
+
+
+    </PreferenceCategory>
+
+
+</PreferenceScreen>
+

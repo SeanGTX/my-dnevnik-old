@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Мой дневник</string>
+    <string name="LoginIn">Логин</string>
+    <string name="PasswordIn">Пароль</string>
+    <string name="LogIn">Войти</string>
+    <string name="title_activity_navigaton">NavigatonActivity</string>
+    <string name="title_marks">Оценки</string>
+    <string name="title_homeworks_short">Дом. задания</string>
+    <string name="Logout">Выйти из аккаунта</string>
+    <string name="Login_title">Войти в Мой дневник</string>
+    <string name="title_schedules">Расписание</string>
+    <string name="succsess_login">Вход успешен!</string>
+    <string name="wrong_login">Неверный логин или пароль!</string>
+    <string name="maintenance_work">Ведутся профилактические работы</string>
+    <string name="fields_isempty">Поля не должны быть путыми!</string>
+    <string name="unknown_error">Неизвестная ошибка!</string>
+    <string name="forgetData">Забыли логин или пароль?</string>
+    <string name="title_activity_settings">Настройки</string>
+    <string name="please_wait">Пожалуйста подождите…</string>
+    <string name="server_error">Ошибка на сервере!\nПовторте попытку позднее</string>
+    <string name="logout_title">Выход</string>
+    <string name="login_data_will_be_deleted">Данные для входа будут удалены. Вы уверены, что хотите выйти?</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Отмена</string>
+    <string name="no_connection">Отсутствует подключение к Интернету</string>
+    <string name="title_homeworks">Домашние задания</string>
+    <string name="title_school_schedule">Расписание звонков</string>
+    <string name="title_lessons_schedule">Расписание уроков</string>
+    <string name="title_monday">Понелельник</string>
+    <string name="title_tuesday">Вторник</string>
+    <string name="title_wednesday">Среда</string>
+    <string name="title_thursday">Четверг</string>
+    <string name="title_friday">Пятница</string>
+    <string name="title_saturday">Суббота</string>
+    <string name="title_sunday">Воскреснье</string>
+    <string name="maintenance_work_message">Пока ведутся тех. работы вы не сможете обновлять/получать новую информацию. Хотите посмотреть сохраненую информацию?</string>
+    <string name="no_connection_message">В данный момент подключение отсутствует. Хотите посмотреть сохраненную информацию?</string>
+    <string name="title_category_account">Аккаунт</string>
+    <string name="title_class">класс</string>
+    <string name="title_notifications">Уведомления</string>
+    <string name="title_marks_notifications">Получать уведомления о новых оценках</string>
+    <string name="title_homeworks_notifications">Получать уведомления о новых Домашних заданиях и сроках их выполения</string>
+    <string name="title_now_lesson">Сейчас идет урок</string>
+    <string name="title_nolesson">Сейчас нет уроков\nОтдыхай😎</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="current_marks">"Оценки за "</string>
+    <string name="current_marks_end">" учебный год"</string>
+    <string name="previous_year">Предыдущий класс</string>
+    <string name="next_year">Следующий класс</string>
+    <string name="title_results">Итоговые</string>
+    <string name="no_onweek_lessons">На этой неделе нет уроков</string>
+</resources>

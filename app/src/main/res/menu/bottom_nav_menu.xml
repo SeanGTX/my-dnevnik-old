@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_marks"
+        android:icon="@drawable/ic_school_24dp"
+        android:title="@string/title_marks" />
+
+    <item
+        android:id="@+id/navigation_schedules"
+        android:icon="@drawable/ic_menu_book_24dp"
+        android:title="@string/title_schedules" />
+
+    <item
+        android:id="@+id/navigation_homeworks"
+        android:icon="@drawable/ic_home_24dp"
+        android:title="@string/title_homeworks" />
+
+</menu>

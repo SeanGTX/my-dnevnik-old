@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_schedules">
+
+    <fragment
+        android:id="@+id/navigation_marks"
+        android:name="com.megboyzz.mydnevnik.ui.marks.MarksFragment"
+        android:label="@string/title_marks"
+        tools:layout="@layout/fragment_marks" />
+
+    <fragment
+        android:id="@+id/navigation_homeworks"
+        android:name="com.megboyzz.mydnevnik.ui.homeworks.HomeWorksFragment"
+        android:label="@string/title_homeworks_short"
+        tools:layout="@layout/fragment_homeworks" />
+
+    <fragment
+        android:id="@+id/navigation_schedules"
+        android:name="com.megboyzz.mydnevnik.ui.schedules.SchedulesFragment"
+        android:label="@string/title_schedules"
+        tools:layout="@layout/fragment_schedules" />
+
+</navigation>

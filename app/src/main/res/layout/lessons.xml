@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/MainLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginVertical="5dp">
+
+        <LinearLayout
+            android:id="@+id/MondayLayout"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/mon_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/title_monday" />
+
+            <ListView
+                android:background="@drawable/table_cell"
+                android:dividerHeight="1dp"
+                android:divider="#FF000000"
+                android:id="@+id/mon_lessonsList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/TuesdayLayout"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tue_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/title_tuesday" />
+
+            <ListView
+                android:id="@+id/tue_lessonsList"
+                android:background="@drawable/table_cell"
+                android:dividerHeight="1dp"
+                android:divider="#FF000000"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/WednesdayLayout"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/wed_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/title_wednesday" />
+
+            <ListView
+                android:id="@+id/wed_lessonsList"
+                android:background="@drawable/table_cell"
+                android:dividerHeight="1dp"
+                android:divider="#FF000000"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ThursdayLayout"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/thu_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/title_thursday" />
+
+            <ListView
+                android:id="@+id/thr_lessonsList"
+                android:background="@drawable/table_cell"
+                android:dividerHeight="1dp"
+                android:divider="#FF000000"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/FridayLayout"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/fri_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/title_friday" />
+
+            <ListView
+                android:id="@+id/fri_lessonsList"
+                android:background="@drawable/table_cell"
+                android:dividerHeight="1dp"
+                android:divider="#FF000000"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+</HorizontalScrollView>

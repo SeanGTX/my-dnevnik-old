@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@mipmap/ic" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/Login_title"
+        android:textAlignment="center"
+        android:textColor="@color/colorBlack"
+        android:textSize="20dp" />
+
+    <FrameLayout
+        android:id="@+id/InputDataLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/LoginInput"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="200dp"
+            android:ems="10"
+            android:hint="@string/LoginIn"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            app:passwordToggleEnabled="true"
+            android:id="@+id/PasswordInput"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="200dp"
+            android:layout_marginTop="45dp"
+            android:layout_gravity="end"
+            android:ems="10"
+            android:hint="@string/PasswordIn"
+            android:inputType="textPassword"/>
+
+        <Button
+            android:id="@+id/ClearLogin"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginRight="200dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/ic_clear_black_24dp" />
+
+        <ToggleButton
+            android:id="@+id/ShowPassword"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="59dp"
+            android:layout_marginRight="200dp"
+            android:layout_gravity="end"/>
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/LoginButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="300dp"
+        android:background="@drawable/inset"
+        android:elevation="5dp"
+        android:onClick="goToSwitcher"
+        android:stateListAnimator="@null"
+        android:text="@string/LogIn"
+        android:textColor="#ffffffff"
+        android:translationZ="1dp" />
+
+    <TextView
+        android:id="@+id/forgetData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/forgetData"
+        android:gravity="center"
+        android:textColor="@color/colorBlack"
+        android:textSize="15sp"
+        android:onClick="RestoreAccess"
+        />
+
+    <Button
+        android:id="@+id/InsertData"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="240dp"
+        android:layout_marginRight="200dp"
+        android:text="insert" />
+
+</LinearLayout>
