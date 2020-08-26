@@ -239,18 +239,25 @@ class PrimaryMarks extends AsyncTask<Void, Void, Void>{
             Formatter URL_formatter = new Formatter();
             URL_formatter.format(LoginManager.DnevnikMarksURL, loginCookies.get("t0"));
             LoginManager.DnevnikMarksURL = URL_formatter.toString();
+
             PrimaryDataResponse = Jsoup.connect(LoginManager.DnevnikMarksURL)
                     .referrer(LoginManager.dnevnikURL)
                     .cookies(loginCookies)
                     .execute();
+
             Document MarksDoc = PrimaryDataResponse.charset("utf-8").parse();
-            String[] name = MarksDoc.selectFirst("h2").text().split(" ");
-            String[] Class = MarksDoc.selectFirst("h3").text().split(" ");
-            String School = MarksDoc.selectFirst("ul.crumbs").selectFirst("a").text();
-            DataManager.saveGeneralInfo(name[0], name[1], name[2], Class[0], School, Class[1]);
+
+            if(!ReEntry) {
+                String[] name = MarksDoc.selectFirst("h2").text().split(" ");
+                String[] Class = MarksDoc.selectFirst("h3").text().split(" ");
+                String School = MarksDoc.selectFirst("ul.crumbs").selectFirst("a").text();
+                DataManager.saveGeneralInfo(name[0], name[1], name[2], Class[0], School, Class[1]);
+            }
+
             BufferedWriter MarksWriter = new BufferedWriter(new FileWriter(PrimaryMarksFile));
             MarksWriter.write(String.valueOf(MarksDoc.select("div#content").first()));
             MarksWriter.close();
+
         }catch (Exception e){
             Log.e("LoginManager", e.toString());
             cancel(true);
